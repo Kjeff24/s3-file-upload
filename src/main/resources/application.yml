@@ -1,0 +1,11 @@
+spring:
+  application.name: s3-upload
+  servlet.multipart:
+    max-file-size: 5MB
+    max-request-size: 5MB
+    enabled: true
+aws:
+  region: ${AWS_REGION}
+  access.key: ${ACCESS_KEY}
+  secret.key: ${ACCESS_KEY}
+  s3.bucket: ${BUCKET_NAME}
